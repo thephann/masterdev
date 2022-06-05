@@ -99,7 +99,7 @@ public class Solution {
                     System.out.print(" ");
                 }
             }
-            System.out.print("\n");
+            System.out.println();
         }
     }
 
