@@ -1,0 +1,2 @@
+{"uni":[{"uniName": "Cambridge", "numberOfStaffs": 500, "email": "CambridgeCont@gmail.com", "department": [{"DepartName": "Architecture", "contact": "0987124555", "programs": "Honors", "numberOfStudents": 130}]}
+{"uniName": "Stanford", "numberOfStaffs": 700, "email": "StanfordCont@gmail.com", "department": [{"DepartName": "Information technology", "contact": "0876543678", "programs": "HighQuality", "numberOfStudents": 150}]}

@@ -1,0 +1,51 @@
+{
+  "type": "record",
+  "name": "universities",
+  "namespace": "src.main.avro",
+  "fields": [
+    {
+      "name": "uniName",
+      "type": "String"
+    },
+    {
+      "name": "number of staff",
+      "type": "int",
+    },
+    {
+      "name": "email",
+      "type": "string"
+    },
+    {
+      "name": "programs",
+      "type": {
+        "name": "Programs",
+        "type": "enum",
+        "fields": ["Master","Bachelor"]
+      }
+    },
+    {
+      "name": "department",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "depart",
+          "type": "record",
+          "fields": [
+            {
+              "name": "DepartName",
+              "type": "string"
+            },
+            {
+              "name": "contact",
+              "type": "string"
+            },
+            {
+              "name": "address",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
