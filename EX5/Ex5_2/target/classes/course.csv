@@ -1,0 +1,202 @@
+id,course_name,course_type
+1,General Physics,1
+2,Introduction to Intormation Technology,0
+3,Signals and systems,0
+4,Data structures and algorithms,1
+5,Discrete Mathematics,0
+6,Database,1
+7,Computer Network,1
+8,Database Management Systems,1
+9,Data Mining,1
+10,Web development,1
+11,Marxist-Leninist Philosophy ,0
+12,Marxist-Leninist Political Economy,1
+13,Scientific Socialism,1
+14,History of Vietnam Communist Party ,0
+15,Ho Chi Minh's Ideology ,0
+16,Physical Education,1
+17,National Defence Education ,1
+18,Calculus,0
+19,Probability and Statistics,0
+20,Introduction to AI,0
+21,Modeling and Optimization for Machine Learning,0
+22,Foundations of Computer Systems,0
+23,Programming for Data Engineering with Python,1
+24,Object-oriented Programming,1
+25,Software Engineering,1
+26,Foundations of Artificial Intelligence,0
+27,Machine Learning,1
+28,Deep learning,0
+29,Natural language processing ,1
+30,Visual processing and analytics,1
+31,Data mining and analytics ,1
+32,AI system development practice,0
+33,Big Data Techniques and Technologies,0
+34,Scientific Seminars,1
+35,"Cognition, language and thought",0
+36,Probabilistic Graphical Models,0
+37,Reinforcement Learning and Planning,0
+38,Programming with GPU,1
+39,AI applications in natural language,1
+40,Speech processing ,1
+41,Human-AI Interaction,0
+42,AI applications in medicine,0
+43,Computational Neuroscience and Applications,1
+44,Bioinformatics,1
+45,AI Robotics,0
+46,AI applications in Engineering,1
+47,AI applications in Environment,1
+48,Knowledge-based Systems,1
+49,Hardware Design for Deep Learning,1
+50,Electronics Devices,0
+51,Analog Electronics,1
+52,Digital Electronics,0
+53,Electromagnetics Engineering,1
+54,Digital Signal Processing,0
+55,Analog Electronic Engineering Practice,0
+56,Digital Electronic Engineering Practice,1
+57,Communications,1
+58,Control Engineering,0
+59,Optical Communication,0
+60,Introduction to Signal Processing for Multimedia Systems,0
+61,Introduction to High Frequency Circuits and Systems,1
+62,Digital Communications and Coding Theory,1
+63,Mobile Communication Systems,0
+64,Embedded Computing System Design,1
+65,Digital Control Systems,1
+66,Signal Processing and Bio -medical Imaging,0
+67,Bioelectromagnetism,0
+68,Wireless Communications,0
+69,Programming for Mobile Devices,0
+70,Programming for Mobile Devices,0
+71,Antenna Techniques,0
+72,Satellite Communication,0
+73,HF Techniques,1
+74,Real -time Embedded Systems,0
+75,Signal Processing Methods,1
+76,Communication Network Administrator,0
+77,Modern Physics,0
+78,Optimization,1
+79,Introduction to Management Science,1
+80,State and Law,0
+81,Micro Economics,1
+82,Macro Economics,0
+83,Principles Of Marketing,0
+84,System Design Project,1
+85,Electronics and Communication Practice,0
+86,Mathematics for Economics,0
+87,Monetary and Financial Theories 1,0
+88,Accounting Principles,0
+89,Social Security,0
+90,Insurance Principles,0
+91,English for Insurance,1
+92,Business Insurance 1,0
+93,Business Insurance 2,1
+94,Social Insurance 1,1
+95,Social Insurance 2,1
+96,Insurance Business Administration 1,1
+97,Insurance Business Administration 2,0
+98,Insurance Statistics,0
+99,Business Communication and Negotiation,0
+100,Business Insurance Electives,0
+101,Risk Management in Insurance Electives,1
+102,Financial Analysis,1
+103,Corprorate Finance,1
+104,Investement in Insurance,1
+105,Managing Social Insurance cards and books Electives,1
+106,Corporate Culture,1
+107,Reinsurance,1
+108,Insurance Adjusting,0
+109,Accounting for Insurance Enterprise,1
+110,Laws in Insurance Business,1
+111,Insurance Business Analysis,1
+112,Adjusting Insurance Electives,1
+113,Social security Law,0
+114,Labour Protection,0
+115,Social Insurance Accounting,0
+116,Social Insurance Electives,1
+117,Social Insurance Management Electives,1
+118,Unemploment Insurance Electives,0
+119,Public Relation Research,0
+120,Advertising Management,1
+121,Agency Management,0
+122,Creative Strategy in Communication,1
+123,Brand Management,1
+124,Media for Public Relations,0
+125,Public Relations Internship Project,1
+126,Sales Promotion,1
+127,Price Management,1
+128,Trade Mark Valuation,1
+129,Public Marketing,1
+130,Service Marketing,1
+131,Digital Marketing,0
+132,Organizational Behavior,1
+133,Human Resource Management,0
+134,Event Planning,0
+135,Crisis Management,1
+136,Legal and Ethics Foundation of Communications,0
+137,Modern Journalism,0
+138,Sponsorship Management,0
+139,Brand Identity,0
+140,Principles of Aesthetic,0
+141,Public Speaking,0
+142,Principles of Psychology 1,0
+143,Investment Project Appraisal,0
+144,Investment Project Accounting,1
+145,Accounting for Banking,0
+146,Strategic Management,1
+147,Financial Management,1
+148,Public Finance,1
+149,Public Finance,0
+150,Commercial Bank,0
+151,Stock Market,0
+152,International Economic Integration,1
+153,Accounting Principles,0
+154,Global Supply Chain Management,1
+155,Principles of Logistics Management,1
+156,Commercial Business,0
+157,Logistics Business,1
+158,Trade in Enterprises,1
+159,Management Information Systems in Logistics,1
+160,International Trade Management,1
+161,Transportation and Freight Forwarding in Foreign Trade,0
+162,Business Communication and Negotiation,1
+163,International Business,1
+164,Electronic Commerce,0
+165,Customs Practice,1
+166,Major Research Paper,0
+167,Warehouse Management,0
+168,Digital Marketing,0
+169,Economics and Technical Norms for Enterprises,0
+170,Operations Management in Logistics,1
+171,Laws on International Maritime,1
+172,Research Methods for Socio - Economic,1
+173,Logistics in Enterprise,0
+174,Multi-modal Transport Management,0
+175,LSP Management,0
+176,E - Logistics,1
+177,Logistics Infrastructure,0
+178,International Busines Services,1
+179,Import-Export Practice,1
+180,Payment and Credit in International Trade,0
+181,Product Management,0
+182,Managerial Accounting,1
+183,Trade Economics 1,1
+184,Logistics Business,1
+185,Merchandise Packaging and Branding,0
+186,Internaional Trade Management 1,0
+187,Business Communication and Negotiation,1
+188,Electronic Commerce,0
+189,Customs Practice,1
+190,International Business,0
+191,Major Research Paper,0
+192,Job analysis and Performance Management,1
+193,Compensation Management,1
+194,Strategic Management,1
+195,Labor Economics,1
+196,Population and Development,0
+197,Labour Psychology,1
+198,Human Resource Acquiring,0
+199,Industrial Relation/Labour Relation,0
+200,Human Resource Acquiring,1
+201,Labour Psychology,1
