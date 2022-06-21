@@ -1,0 +1,7 @@
+name_age_dataset: https://archive.ics.uci.edu/ml/machine-learning-databases/00591/
+
+Ràng buộc: 
+- Mỗi instructor dạy 5 môn
+- Mỗi lớp có 20 sinh viên.
+- Mỗi giảng viên dạy 2 lớp do đó sẽ có 10 lớp thuộc 1 môn.
+

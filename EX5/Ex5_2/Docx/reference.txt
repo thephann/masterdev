@@ -1,0 +1,11 @@
+Cacl elapsed time: https://memorynotfound.com/calculating-elapsed-time-java/
+
+JDBC insert: https://viettuts.vn/java-jdbc/preparedstatement-trong-java
+https://www.codejava.net/java-se/jdbc/jdbc-batch-update-examples
+https://www.geeksforgeeks.org/inserting-records-in-batch-using-jdbc/
+https://stackjava.com/network-programming/huong-dan-java-jdbc-xu-ly-batch-trong-jdbc-code-vi-du-batch-insert.html
+
+Read CSV file: https://techvidvan.com/tutorials/read-csv-file-in-java/
+
+Set default utf-8 charset when using jdbc: 
+https://congdongjava.com/forum/threads/insert-d%E1%BB%AF-li%E1%BB%87u-ti%E1%BA%BFng-vi%E1%BB%87t-v%C3%A0o-mysql-bi-l%E1%BB%97i-font-gi%C3%BAp-m%C3%ACnh-v%E1%BB%9Bi.16508/
