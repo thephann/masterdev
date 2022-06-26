@@ -5,6 +5,8 @@ import com.example.spring_boot_crud_mongodb.repository.BooksRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,7 +20,7 @@ public interface BooksService {
 
     Books findById(String id);
 
-    Books save(Books books);
+    Books create(Books books);
 
     Books update(Books books);
 
@@ -28,5 +30,9 @@ public interface BooksService {
 
     List<Books> findBooksBetweenDate(Date date1, Date date2);
 
-//    List<Books> fullTextSearchByName(String name);
+    List<Books> fullTextSearchByName(String name);
+
+    Page<Books> findByPage(Integer pageNo,Integer pageSize);
+
+//    Page<Books> findBookByName(Integer pageNo,Integer pageSize, String name);
 }

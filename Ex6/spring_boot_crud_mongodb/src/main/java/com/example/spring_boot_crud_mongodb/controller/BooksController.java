@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -38,7 +39,7 @@ public class BooksController {
 
     @PutMapping
     public ResponseEntity<Books> createBook(@RequestBody Books books) {
-        Books books1 = booksService.save(books);
+        Books books1 = booksService.create(books);
         return ResponseEntity.ok().body(books1);
     }
 
@@ -76,9 +77,31 @@ public class BooksController {
         return ResponseEntity.ok().body(booksList1);
     }
 
-//    @GetMapping("fullText/{name}")
-//    public ResponseEntity<List<Books>> getBooksByFullText(@PathVariable String name) {
-//        return ResponseEntity.ok().body(booksService.fullTextSearchByName(name));
+    @GetMapping("/fullText/{name}")
+    public ResponseEntity<List<Books>> getBooksByFullText(@PathVariable String name) {
+        List<Books> booksList2 = booksService.fullTextSearchByName(name);
+        return ResponseEntity.ok().body(booksList2);
+    }
+
+    @GetMapping("/page")
+    public ResponseEntity<Page<Books>> getAllPage(
+            @RequestParam(defaultValue = "0") Integer pageNo,
+            @RequestParam(defaultValue = "20") Integer pageSize
+    ) {
+        Page<Books> books = booksService.findByPage(pageNo,pageSize);
+        return ResponseEntity.ok().body(books);
+    }
+
+//    @GetMapping("/page")
+//    public ResponseEntity<Page<Books>> getBookByNameEachPage(
+//            @RequestParam(defaultValue = "0") Integer pageNo,
+//            @RequestParam(defaultValue = "20") Integer pageSize,
+//            @RequestParam(defaultValue = "hehe") String name
+//    ) {
+//        Page<Books> booksPage = booksService.findBookByName(pageNo,pageSize,name);
+//        return  ResponseEntity.ok().body(booksPage);
 //    }
+
+
 
 }
