@@ -67,3 +67,38 @@ hdfs dfs -get /phannt8/ex2/output1/part-r-00000 ex2_res
 ~~~
 
 ## Task 3
+
+1.Create input, output folder on HDFS.
+~~~
+hdfs dfs -mkdir /phannt8/ex3/input
+hdfs dfs -mkdir /phannt8/ex3/output
+~~~
+
+2.Copy input file from local to server.
+~~~
+scp -r /home/phannt8/Documents/masterdev/Ex7/HadoopJoinTable/input/salary.csv  hadoop@172.17.80.21:/home/hadoop/phannt8/ex3
+scp -r /home/phannt8/Documents/masterdev/Ex7/HadoopJoinTable/input/people.csv  hadoop@172.17.80.21:/home/hadoop/phannt8/ex3
+~~~
+
+3.Put data to hdfs.
+~~~
+hdfs dfs -put /home/hadoop/phannt8/ex3/people.csv /phannt8/ex3/input
+hdfs dfs -put /home/hadoop/phannt8/ex3/salary.csv /phannt8/ex3/input
+~~~
+
+4.Copy classes folder from local to server and build jar file.
+~~~
+scp -r /home/phannt8/Documents/masterdev/Ex7/HadoopJoinTable/target/classes hadoop@172.17.80.21:/home/hadoop/phannt8/ex3
+jar -cvf ex3.jar -C classes/ .
+~~~
+
+5.Run jar file with yarn.
+~~~
+yarn jar ex3.jar main.java.JoinTable /phannt8/ex3/input/people.csv /phannt8/ex3/input/salary.csv  /phannt8/ex3/output
+~~~
+
+6.Get output from hdfs.
+~~~
+hdfs dfs -get /phannt8/ex3/output/part-r-00000 ex3_res
+~~~
+
