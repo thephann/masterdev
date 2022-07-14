@@ -102,3 +102,12 @@ yarn jar ex3.jar main.java.JoinTable /phannt8/ex3/input/people.csv /phannt8/ex3/
 hdfs dfs -get /phannt8/ex3/output/part-r-00000 ex3_res
 ~~~
 
+# EX8
+
+input on HDFS: /phannt8/spark/input/small_data.snappy.parquet
+
+output on HDFS:
+/phannt8/spark/small_data_output/device_model_num_user
+/phannt8/spark/small_data_output/device_model_list_user
+/phannt8/spark/small_data_output/button_count_by_user_id_device_model
+
