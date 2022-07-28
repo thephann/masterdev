@@ -1,0 +1,4 @@
+- Cài đặt airflow qua miniconda với python 3.6 trên server 172.17.80.22
+- DB:sqlite:////tmp/airflow/airflow.db
+- File .service: /etc/systemd/system/airflow-webserver.service
+		/etc/systemd/system/airflow-scheduler.service
