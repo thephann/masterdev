@@ -20,16 +20,16 @@ public class NetflixProducer {
     private static final Logger logger = LogManager.getLogger();
 
     public static void main(String[] args) {
-        String data_path = "/home/phannt8/Documents/masterdev/Final_Project/final_project/data/netflix_data.csv";
+        String data_path = "/home/phannt8/Documents/masterdev/Final_Project/final_project/data/netflix_cleaned.csv";
         Properties props = new Properties();
         props.put(ProducerConfig.CLIENT_ID_CONFIG, "demo");
-        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, ":9092"); // 172.17.80.20:9092
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.5.102:9092"); // 172.17.80.20:9092
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
         KafkaProducer<String,String> kafkaProducer = new KafkaProducer<String, String>(props);
 
-        String topicName = "phannt8_netflix_1";
+        String topicName = "netflix";
         logger.info("Starting load ...");
 
         try {
