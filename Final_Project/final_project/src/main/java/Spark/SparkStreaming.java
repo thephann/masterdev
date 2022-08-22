@@ -57,14 +57,13 @@ public class SparkStreaming {
         Dataset<Row> ds = spark
                 .readStream()
                 .format("kafka")
-                .option("kafka.bootstrap.servers", "192.168.5.102:9092")
-                .option("subscribe","netflix")
+                .option("kafka.bootstrap.servers", "192.168.193.93:9092")
+                .option("subscribe","netflix-1")
                 .option("startingOffsets", "earliest")
-                .option("auto.offset.reset","true")
-                .option("failOnDataLoss", "false")
                 .load();
 
         Dataset<Row> df1 = ds.selectExpr("CAST (value AS STRING)");
+
         Dataset<Row> df2 = df1.withColumn("value", functions.from_json(df1.col("value"), sc ,new HashMap<>()));
 
         Dataset<Row> DF =
@@ -88,8 +87,8 @@ public class SparkStreaming {
                 .writeStream()
                 .format("parquet")
                 .outputMode("append")
-                .option("checkpointLocation", "hdfs://192.168.5.102:9000/user/phannt8/btl/checkpoint")
-                .option("path", "hdfs://192.168.5.102:9000/user/phannt8/btl/output")
+                .option("checkpointLocation", "hdfs://172.17.80.21:9000/user/phannt8/btl/checkpoint")
+                .option("path", "hdfs://172.17.80.21:9000/user/phannt8/btl/output")
                 .start();
         query.awaitTermination();
 
@@ -103,19 +102,6 @@ public class SparkStreaming {
 
 
 
-
-//                df2.select(split(col("value"),",").getItem(0).as("show_id"),
-//                                split(col("value"),",").getItem(1).as("type"),
-//                                split(col("value"),",").getItem(2).as("title"),
-//                                split(col("value"),",").getItem(3).as("director"),
-//                                split(col("value"),",").getItem(4).as("cast"),
-//                                split(col("value"),",").getItem(5).as("country"),
-//                                split(col("value"),",").getItem(6).as("date_added"),
-//                                split(col("value"),",").getItem(7).as("release_year"),
-//                                split(col("value"),",").getItem(8).as("rating"),
-//                                split(col("value"),",").getItem(9).as("duration"),
-//                                split(col("value"),",").getItem(10).as("listed_in"),
-//                                split(col("value"),",").getItem(11).as("description")
 
 
 

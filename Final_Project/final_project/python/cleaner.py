@@ -30,6 +30,8 @@ if __name__ == '__main__':
     df['genre'] = df['genre'].apply(lambda x: x.split(",")[0])
     df = df.drop('cast', axis=1)
 
+    df = df.replace('', 0)
+
     df.to_csv(output_path + 'netflix_cleaned_{}.csv'.format(_getToday()), index=False, header=True)
 
     print(df.head(5))

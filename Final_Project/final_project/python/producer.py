@@ -5,8 +5,10 @@ import json
 from kafka import KafkaProducer
 import pandas as pd
 
+
 def _getToday():
     return datetime.date.today().strftime("%Y%m%d")
+
 
 class MessageProducer:
     broker = ""
@@ -26,6 +28,7 @@ class MessageProducer:
         try:
             for row in df.iterrows():
                 msg = row[1].to_dict()
+                time.sleep(1)
                 self.producer.send(self.topic, msg)
                 self.producer.flush()
             print("message sent successfully...")
@@ -35,11 +38,11 @@ class MessageProducer:
 
 
 if __name__ == '__main__':
-    broker = 'server:9092'
-    topic = 'netflix'
+    broker = '192.168.193.93:9092'
+    topic = 'netflix-1'
 
     data_path = '/home/phannt8/Documents/masterdev/Final_Project/final_project/data/'
-
+    # data_path + 'netflix_cleaned_{}.csv'.format(_getToday())
     netflix_df = pd.read_csv(data_path + 'netflix_cleaned_{}.csv'.format(_getToday()))
     # print(netflix_df.head(5))
     message_producer = MessageProducer(broker, topic)
