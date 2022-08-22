@@ -1,4 +1,4 @@
-Bài tập lớn: Xây dựng luồng dữ liệu và các biểu đồ phân tích một số thông tin về bộ dữ liệu netflix.
+Bài tập lớn: Xây dựng luồng dữ liệu và các biểu đồ phân tích một số thông tin về dữ liệu netflix.
 
 Dữ liệu: https://www.kaggle.com/datasets/shivamb/netflix-shows/code
 
