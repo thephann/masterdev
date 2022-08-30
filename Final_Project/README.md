@@ -10,7 +10,7 @@ Dữ liệu: https://www.kaggle.com/datasets/shivamb/netflix-shows/code
 * Luồng hoạt động:
 1) Dữ liệu được làm sạch và được đẩy vào kafka topics theo từng record bằng producer.
 2) Sử dụng spark job là một consumer để consume messages và lưu dữ liệu vào HDFS.
-3) Từ dữ liệu trên HDFS tạo bảng hive rồi thực hiện phân tích dữ liệu từ database trên HIVE.
+3) Từ dữ liệu trên HDFS tạo bảng hive rồi thực hiện phân tích dữ liệu từ database trên HIVE bằng Apache Superset.
 
 Chạy spark submit: 
   `spark-submit --deploy-mode cluster --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0 --class Spark.SparkStreaming final_project-1.0-SNAPSHOT.jar`
