@@ -7,6 +7,8 @@ Dữ liệu: https://www.kaggle.com/datasets/shivamb/netflix-shows/code
 2) Producer: /Final_Project/final_project/python/producer.py
 3) Spark Job: /Final_Project/final_project/src/main/java/Spark/SparkStreaming.java
 
+![pipeline](https://user-images.githubusercontent.com/48157563/187626060-60b08fe0-9a9b-4f4e-b32e-634ff83888ce.png)
+
 * Luồng hoạt động:
 1) Dữ liệu được làm sạch và được đẩy vào kafka topics theo từng record bằng producer.
 2) Sử dụng spark job là một consumer để consume messages và lưu dữ liệu vào HDFS.
